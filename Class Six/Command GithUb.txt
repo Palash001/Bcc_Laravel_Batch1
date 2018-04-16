@@ -1,0 +1,166 @@
+   --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --recurse-submodules[=<check|on-demand|no>]
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=<yes|no|if-asked>]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+Student@BCC11-PC MINGW64 /n/BCC_Laravel_frameworkBatch01/bcc.laravel-batch-01 (master)
+$ git push --set=upstream origin master
+error: option `set-upstream' takes no value
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --recurse-submodules[=<check|on-demand|no>]
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=<yes|no|if-asked>]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+Student@BCC11-PC MINGW64 /n/BCC_Laravel_frameworkBatch01/bcc.laravel-batch-01 (master)
+$ clear
+
+Student@BCC11-PC MINGW64 /n/BCC_Laravel_frameworkBatch01/bcc.laravel-batch-01 (master)
+$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/Palash001/Bcc_Laravel_Batch1.git'
+
+Student@BCC11-PC MINGW64 /n/BCC_Laravel_frameworkBatch01/bcc.laravel-batch-01 (master)
+$ git push -f origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/Palash001/Bcc_Laravel_Batch1.git'
+
+Student@BCC11-PC MINGW64 /n/BCC_Laravel_frameworkBatch01/bcc.laravel-batch-01 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        Class Five/
+        Class Four/
+        Class_One/
+        Practice.html
+        gitlab command.txt
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Student@BCC11-PC MINGW64 /n/BCC_Laravel_frameworkBatch01/bcc.laravel-batch-01 (master)
+$ git add .
+
+Student@BCC11-PC MINGW64 /n/BCC_Laravel_frameworkBatch01/bcc.laravel-batch-01 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   Class Five/Practice.html
+        new file:   Class Four/Practice.html
+        new file:   Class Four/horse.ogg
+        new file:   Class Four/iFrame.html
+        new file:   Class Four/image/horse.ogg
+        new file:   Class Four/image/jean.jpg
+        new file:   Class Four/image/movie.mp4
+        new file:   Class Four/movie.mp4
+        new file:   Class Four/test.html
+        new file:   Class_One/Test.txt
+        new file:   Practice.html
+        new file:   gitlab command.txt
+        new file:   index.html
+
+
+Student@BCC11-PC MINGW64 /n/BCC_Laravel_frameworkBatch01/bcc.laravel-batch-01 (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) 6f05918] Initial Commit
+ 14 files changed, 915 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Class Five/Practice.html
+ create mode 100644 Class Four/Practice.html
+ create mode 100644 Class Four/horse.ogg
+ create mode 100644 Class Four/iFrame.html
+ create mode 100644 Class Four/image/horse.ogg
+ create mode 100644 Class Four/image/jean.jpg
+ create mode 100644 Class Four/image/movie.mp4
+ create mode 100644 Class Four/movie.mp4
+ create mode 100644 Class Four/test.html
+ create mode 100644 Class_One/Test.txt
+ create mode 100644 Practice.html
+ create mode 100644 gitlab command.txt
+ create mode 100644 index.html
+
+Student@BCC11-PC MINGW64 /n/BCC_Laravel_frameworkBatch01/bcc.laravel-batch-01 (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Student@BCC11-PC MINGW64 /n/BCC_Laravel_frameworkBatch01/bcc.laravel-batch-01 (master)
+$ git push -u origin master
+Counting objects: 17, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (17/17), 333.41 KiB | 22.23 MiB/s, done.
+Total 17 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Palash001/Bcc_Laravel_Batch1.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Student@BCC11-PC MINGW64 /n/BCC_Laravel_frameworkBatch01/bcc.laravel-batch-01 (master)
+$
