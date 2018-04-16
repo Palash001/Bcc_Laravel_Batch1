@@ -1,0 +1,430 @@
+<!DOCTYPE Html5>
+
+<html>
+
+<head>
+
+<title> Basic Html5</title>
+
+<meta charset="UTF-8">
+
+<meta name="description" content="Basic Html,Css">
+
+<meta name="keywords" content="CSS,HTML,JavaScript">
+
+<meta name="author" content="Palash">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<meta http-equiv="refresh" content="">
+
+<style>
+
+header
+
+{
+	border:1px solid gray;
+	
+	padding:2em;
+	
+	text-align:center;
+}
+
+footer
+
+{
+	border:1px solid gray;
+	
+	text-align:center;
+	
+	color:off-white;
+}
+
+#content nav
+
+{
+
+display:block;
+
+text-decoration:none;
+
+padding:14px 16px;
+
+font-size:20px;
+
+overflow:hidden;
+
+text-align:center;
+
+
+
+
+}
+
+</style>
+
+<script type="text/javascript">
+
+function on_iframe_load() 
+
+{
+	document.getElementById('iframe_a').onload = function() 
+	
+	{
+		alert('Thanks for the visit!');
+	};
+	
+}
+
+
+</script>
+
+<base href="image/" target="_blank">
+
+</head>
+
+<body>
+
+<header> WebPage Introduction Goes here </header>
+
+<main>
+
+<br/>
+
+<div id="main">
+
+
+
+<div id="content">
+
+<nav>
+
+<a href="html.com"> Html</a>
+
+<a href="css.com"> Css</a>
+
+<a href="javascript.com"> JS </a>
+
+</nav>
+
+</div>
+
+
+<div id="iframe">
+
+
+
+<h2>Iframe - Target for a Link</h2>
+
+<iframe src="test.html" height="200" width="300"></iframe>
+
+<iframe src="iFrame.html" height="300px" width="300px"></iframe>
+
+<p><a href="http://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+<p>When the target of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+<br/>
+
+
+
+<h1> SandBox With Iframe </h1>
+
+<iframe src="demo_iframe_sandbox_origin.htm" sandbox="allow-same-origin allow-scripts">
+
+  <p>Your browser does not support iframes.</p>
+  
+</iframe>
+
+<p>Try removing the sandbox attribute value, or changing it.</p>
+
+<p><strong>Note:</strong> The sandbox attribute is not supported in Internet Explorer 9 and earlier versions, or in Opera 12 and earlier.</p>
+
+<br/>
+
+
+
+<h2> Load iFrame OnClick </h2>
+
+<iframe name="iframe_a" id="iframe_a"> </iframe>
+
+<a href="http://www.example.com/" target="iframe_a" onclick="on_iframe_load()">Go!</a>
+
+</div>
+
+<br/>
+
+
+
+
+<div id="sound">
+
+<h2> Audio Control </h2>
+
+<audio controls>
+
+  <source src="horse.ogg" type="audio/ogg">
+  
+  <source src="horse.mp3" type="audio/mpeg">
+  
+  Your browser does not support the audio element.
+  
+</audio>
+
+<br>
+
+<h2> Video Tag </h2>
+
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<p><strong>Note:</strong> The video tag is not supported in Internet Explorer 8 and earlier versions.</p>
+
+<br/>
+
+<h2>  Youtube Video Using  IFrame </h2>
+
+<p> <b> Normal YoutuBe in iframe </b> </p>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+
+</iframe>
+
+<br/>
+
+<p><b> AutoPlay Videoin YoutuBe When user Loads Page in iframe </b> </p>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+
+</iframe>
+
+<br/>
+
+<p>
+
+<b> Value 0 (default): The video will play only once.
+
+Value 1: The video will loop (forever).
+</b> 
+
+</p>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+
+</iframe>
+
+<br/>
+
+<p>
+
+<b>
+
+YouTube Controls
+
+Value 0: Player controls does not display.
+
+Value 1 (default): Player controls display.
+
+</b>
+
+</p>
+
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+
+</iframe>
+
+
+<br/>
+
+<p><b> Embedded YoutuBe in iframe </b> </p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9jvxQG3c9QI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+
+</iframe>
+
+</iframe>
+
+</br>
+
+</div>
+
+<br/>
+
+
+
+
+<div id="base">
+
+
+
+<h2>  Base Url </h2>
+
+<p>
+
+<img src="jean.jpg" width="100px" height="100px" alt="Jeans"> 
+
+- Notice that we have only specified a relative address for the image. 
+
+
+Since we have specified a base URL in the head section, 
+
+the browser will look for the image at "https://www.w3schools.com/images/stickman.gif".
+
+</p>
+
+
+
+<p>
+
+<a href="https://www.w3schools.com">W3Schools</a> 
+
+- Notice that the link opens in a new window, even if it has no target="_blank" attribute. 
+
+This is because the target attribute of the base element is set to "_blank".
+
+</p>
+
+</br/>
+
+
+
+<h2>  BiDirectioanl <h2> 
+
+<p>This paragraph will go left-to-right.</p>  
+
+<p> <bdo dir="rtl">This paragraph will go right-to-left.</bdo> </p> 
+
+
+<br/>
+
+
+
+<h2> Performatted Text <h2>
+
+
+<pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+</pre>
+
+<br/>
+
+<h2> Data List tag </h2>
+
+<form action="/action_page.php" method="get">
+
+  <input list="browsers" name="browser">
+  
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  
+  <input type="submit">
+  
+</form>
+
+<br/>
+
+<h2>Level Tag</h2>
+
+<br/>
+
+<h2> Result Tag</h2>
+
+<br/>
+
+<h2> Access Key </h2>
+
+<a href="https://www.w3schools.com/html" accesskey="h">HTML tutorial</a><br>
+
+<a href="https://www.w3schools.com/css" accesskey="c">CSS tutorial</a>
+
+
+<p>The accesskey attribute specifies a shortcut key to activate/focus an element.</p>
+
+
+<p><strong>Note:</strong> The shortcut is varying in different browsers:</p>
+
+<ul>
+    <li>IE, Chrome, Safari, Opera 15+: [ALT] + <em>accesskey</em></li>
+	
+    <li>Opera prior version 15: [SHIFT] [ESC] + <em>accesskey</em></li>
+	
+    <li>Firefox: [ALT] [SHIFT] + <em>accesskey</em></li>
+</ul>
+
+<br/>
+
+<h2> Editable Attribute in Html</h2>
+
+<p contenteditable="true">This is a paragraph. It is editable. Try to change this text.</p>
+
+<br/>
+
+<h2> Downloadable Attribute in Html </h2>
+
+<p>Click on the w3schools logo to download the image:<p>
+
+<a href="image/jean.jpg" download>
+
+  <img border="0" src="image/jean.jpg" alt="W3Schools" width="104" height="142">
+  
+</a>
+
+
+</div>
+
+<article>
+	
+	<h1> Heading One</h1
+	
+	<p> Paragraph contents</p>
+	
+<article>
+
+
+<div id="sidebar">
+	
+	<aside>
+
+	<h2> Aside  tag<h2>
+
+	<p>Aside is used for in sidebar or in article</p>
+
+	<aside>
+	
+</div>
+
+
+
+
+</div>
+
+<footer>
+
+<h3>Design By </h3>
+
+<p>@Copywright</p>
+
+</footer>
+
+</main>
+
+</body>
+
+</html>
+
+
+
+
