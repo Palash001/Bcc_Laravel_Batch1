@@ -1,4 +1,4 @@
-   --tags                push tags (can't be used with --all or --mirror)
+8:50 PM 4/16/20188:50 PM 4/16/2018   --tags                push tags (can't be used with --all or --mirror)
     -n, --dry-run         dry run
     --porcelain           machine-readable output
     -f, --force           force updates
