@@ -1,0 +1,346 @@
+*
+
+	{
+		box-sizing:border-box;
+		
+	}
+
+body
+
+	{
+			font-family:arial;
+
+			background-image:url("bck.jpeg");
+			
+			background-repeat:no-repeat ;
+			
+			background-attachment:fixed;
+			
+			padding:30px;
+			
+			
+	}
+	
+
+	.header
+	
+		{
+		
+			background-color:#66ff99;
+			
+			text-align:center;
+			
+			padding:60px;
+			
+			font-family:Italic;
+			
+		}
+		
+	
+	.header h1 p
+		
+		{
+			font-size:1em;
+			
+		}
+		
+	
+	.topnav
+	
+		{
+		
+			overflow:hidden;
+			
+			background-color:#003311;
+			
+		}
+		
+	
+	.topnav a
+		
+		{
+		
+			display:block;
+			
+			float:left;
+			
+			text-decoration:none;
+			
+			padding:14px 16px;
+			
+			color:white;
+			
+		}
+
+	.topnav a:hover
+	
+		{
+			background-color:#e6ffee;
+			
+			color:black;
+			
+		
+		}
+		
+		
+		.leftcolumn
+		
+			{
+				width:75%;
+				
+				float:left;
+				
+			}
+			
+		
+		.rightcolumn
+		
+			{
+			
+				width:25%;
+				
+				padding-left:20px;
+				
+				background-color:#6666cc;
+				
+				float:left;
+				
+				margin-top:20px;
+				
+			}
+		
+	
+	.card
+		
+		{
+		
+			margin-top:20px;
+			
+			padding:20px;
+			
+			background-color:#d9f2e6
+			
+		}
+		
+	
+	/* Animation Property */
+		
+		.div1 
+		
+		{
+			width: 100px;
+			height: 100px;
+			background: red;
+			position: relative;
+			-webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+			animation: mymove 5s infinite;
+		}
+
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes mymove 
+
+		{
+			from {left: 0px;}
+			to {left: 200px;}
+		}
+
+		@keyframes mymove 
+
+		{
+			from {left: 0px;}
+			to {left: 200px;}
+		}
+
+	/* Animation name Property */
+	
+		
+	.div2 
+	
+	{
+			width: 100px;
+			height: 100px;
+			background: purple;
+			position: relative;
+			-webkit-animation-name: mymove; /* Safari 4.0 - 8.0 */
+			-webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+			animation-name: mymove;
+			animation-duration: 5s;
+		}
+
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes mymove {
+			from {left: 0px;}
+			to {left: 200px;}
+		}
+
+		@keyframes mymove {
+			from {left: 0px;}
+			to {left: 200px;}
+		}
+
+	/* Animation fill-mode Property */	
+		
+	.div3 
+	
+	{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    position: relative;
+    -webkit-animation: mymove 3s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation: mymove 3s;
+    animation-fill-mode: forwards;
+	}
+
+	/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes mymove 
+	
+	{
+		from {top: 0px;}
+		
+		to {top: 200px; background-color: blue;}
+	}
+
+	@keyframes mymove 
+
+	{
+		from {top: 0px;}
+		to {top: 200px; background-color: blue;}
+	}
+		
+	
+	/* Animation iteration Count */
+	
+	
+	.div4 
+	
+	{
+			width: 100px;
+			height: 100px;
+			background: maroon;
+			position: relative;
+			-webkit-animation: mymove 3s;  /* Safari 4.0 - 8.0 */
+			-webkit-animation-iteration-count: 2; /* Safari 4.0 - 8.0 */
+			animation: mymove 3s;
+			animation-iteration-count: infinite;
+		}
+
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes mymove {
+			from {top: 0px;}
+			to {top: 200px;}
+		}
+
+		@keyframes mymove {
+			from {top: 0px;}
+			to {top: 200px;}
+		}
+		
+		
+		
+		/* Animation -Play-State-Property */
+		
+			
+			.div5 
+			
+			{
+				width: 100px;
+				height: 100px;
+				background: red;
+				position: relative;
+				-webkit-animation: mymove 5s; /* Safari 4.0 - 8.0 */
+				-webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
+				animation: mymove 5s;
+				animation-play-state: paused;
+			}
+
+			/* Safari 4.0 - 8.0 */
+			@-webkit-keyframes mymove {
+				from {left: 0px;}
+				to {left: 200px;}
+			}
+
+			@keyframes mymove {
+				from {left: 0px;}
+				to {left: 200px;}
+			}
+		
+
+		
+			
+			
+		
+	
+	.fakeimg
+	
+		{
+		
+			width:100px;
+			
+			padding:20px;
+			
+			background-color:white;
+			
+		}
+		
+	
+	.row:after
+		
+		{
+		
+			content:"";
+			
+			display:table;
+			
+			clear:both;
+			
+		}
+		
+	.footer
+	
+		{
+		
+			text-align:center;
+			
+			padding:5px;
+			
+			margin-top:5px;
+			
+			border:1px solid green;
+			
+			}
+			
+			
+		@media screen and (max-width:800px)
+		
+			{
+			
+				.leftcolumn,.rightcolumn
+				
+					{
+					
+						width:100%;
+						
+						padding:0;
+						
+					}
+					
+			}
+			
+		
+		@media screen and (max-width:400px)
+		
+			{
+			
+				.topnav a
+				
+					{
+					
+						float:none;
+						
+						width:100%;
+						
+					}
+					
+			}
