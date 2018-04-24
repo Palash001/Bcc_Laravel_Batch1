@@ -148,6 +148,7 @@ body
 
 		{
 			from {left: 0px;}
+			
 			to {left: 200px;}
 		}
 
@@ -197,7 +198,8 @@ body
 	@-webkit-keyframes mymove 
 	
 	{
-		from {top: 0px;}
+		from {top: 0px;}					/* top theke o px theke shuru hobe  r 200px top theke bottom e neme left e shorbe*/
+															
 		
 		to {top: 200px; background-color: blue;}
 	}
@@ -206,6 +208,7 @@ body
 
 	{
 		from {top: 0px;}
+		
 		to {top: 200px; background-color: blue;}
 	}
 		
@@ -224,7 +227,7 @@ body
 			-webkit-animation-iteration-count: 2; /* Safari 4.0 - 8.0 */
 			animation: mymove 3s;
 			animation-iteration-count: infinite;
-		}
+	}
 
 		/* Safari 4.0 - 8.0 */
 		@-webkit-keyframes mymove {

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Basic HTML page">
+    <meta name="keywords" content="HTML, Learn HTML">
+    <meta name="author" content="Awolad Hossain">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="5">
+    <title>Class 001 - HTML</title>
+</head>
+<style>
+    body {
+        margin: 0 auto;
+        padding: 50px;
+        background-color: aliceblue;
+    }
+
+    header {
+        border: 1px solid #dddddd;
+        padding: 5px;
+        text-align: center;
+    }
+
+    aside {
+        float: right;
+        border: 1px solid #dddddd;
+        padding: 50px;
+    }
+
+    main {
+        border: 1px solid #dddddd;
+        padding: 10px;
+    }
+
+    footer {
+        width: 100%;
+        margin: 0 auto;
+        border: 1px solid #dddddd;
+        text-align: center;
+    }
+
+    section {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+</style>
+<script>
+    function handleButtonClick() {
+        document.getElementById('demo').innerHTML = Date();
+    }
+</script>
+<body>
+
+<header>
+    <h1>This is Header</h1>
+</header>
+
+<main>
+    <!--This is single line HTML comment-->
+    <!--This is multiple
+    line HTML comment-->
+
+    <aside>
+        This is sidebar!
+    </aside>
+
+    <article>
+        <div>
+            <h1>This is heading one!</h1>
+            <h2>This is heading two!</h2>
+            <h3>This is heading three!</h3>
+            <h4>This is heading four!</h4>
+            <h5>This is heading five!</h5>
+            <h6>This is heading six!!</h6>
+        </div>
+    </article>
+
+    <section>
+        <button type="button" onclick="handleButtonClick()">
+            Click me to see magic!
+        </button>
+        <div id="demo"></div>
+    </section>
+
+    <footer>
+        This is footer
+    </footer>
+</main>
+
+
+</body>
+</html>

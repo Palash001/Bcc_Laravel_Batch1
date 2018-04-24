@@ -35,6 +35,19 @@ margin:0;
 
 }
 
+main
+
+	{
+		margin:20px;
+		
+		padding:14px;
+		
+		background-color:#f1f1f1;
+		
+		text-align:center;
+		
+	}
+
 header
 
 {
@@ -50,11 +63,15 @@ header
 footer
 
 {
-	border:1px solid gray;
+	display:block;
+	
+	text-decoration:none;
+	
+	border:.5px dotted;
 	
 	text-align:center;
 	
-	padding:20px;
+	padding:10px;
 	
 	color:off-white;
 }
@@ -190,13 +207,1084 @@ function on_iframe_load()
 
 <section id="input">
 
+<form action="action.php" target="_blank" method="GET">
+
+<h2> Html Forms </h2>
+
 <label for="name1"> Name
 
 <input type="text" name="name" id="name1"> 
 
+<br/>
+
+<label for="email1">Email
+
+<input type="email" name="email" id="email1">
+
+<br> <br>
+
+<input type="submit" value="Submit">
+
+<br/>
+
+<h2> Radio Button </h2>
+
+<input type="radio" name="gender" value="" checked >Male <br/>
+
+<input type="radio" name="gender" value="female"> Female<br/>
+
+<input type="radio" name="gender" value="other"> Other
+
+</form>
+
+<br/>
+
+<h2>Grouping Form Data with Fieldset</h2>
+
+<p>
+
+The fieldset element is used to group related data in a form, 
+
+and the legend element defines a caption for the fieldset element.
+
+</p>
+
+<form action="/action_page.php" target="_blank">
+
+  <fieldset>
+  
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse">
+    <br><br>
+    <input type="submit" value="Submit">
+	
+  </fieldset>
+  
+  
+</form>
+
+<br/>
+
+<h2>The select Element</h2>
+
+<p>The select element defines a drop-down list:</p>
+
+<form action="/action.php">
+
+<select name="cars">
+
+<option value="volvo"> Volvo </option>
+
+<option value="mercedez"> Mercedez </option>
+
+<option value="toyota"> Toyota </option>
+
+<option value="scania"> Scania </option>
+
+</select>
+
+</form>
+
+<br><br>
+
+<h2>Pre-selected Option</h2>
+
+<p>You can preselect an option with the selected attribute.</p>
+
+<form action="/action.php">
+
+<select name="cars">
+
+<option value="volvo"> Volvo </option>
+
+<option value="mercedez"> Mercedez </option>
+
+<option value="toyota" selected> Toyota </option>
+
+<option value="scania"> Scania </option>
+
+</form>
+
+<br> <br>
+
+<h2>Visible Option Values</h2>
+
+<p>Use the size attribute to specify the number of visible values.</p>
+
+<form action="/action.php">
+
+<select name="cars" size="3">
+
+<option value="volvo"> Volvo </option>
+
+<option value="mercedez"> Mercedez </option>
+
+<option value="toyota" selected> Toyota </option>
+
+<option value="scania"> Scania </option>
+
+</form>
+
+<br> <br>
+
+<h2>Allow Multiple Seletcions</h2>
+
+<p>Use the multiple attribute to allow the user to select more than one value.</p>
+
+<form action="/action.php">
+
+<select name="cars" size="4" multiple>
+
+<option value="volvo"> Volvo </option>
+
+<option value="mercedez"> Mercedez </option>
+
+<option value="toyota" selected> Toyota </option>
+
+<option value="scania"> Scania </option>
+
+<br> <br>
+
+<input type="submit">
+
+<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+
+</form>
+
+<br>
+
+<br>
+
+<h2>Textarea</h2>
+
+<p>The textarea element defines a multi-line input field.</p>
+
+<form action="/action_page.php">
+
+  <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+  
+  <br>
+  
+  <input type="submit">
+  
+</form>
+
+<br>
+
+<br>
+
+<h2> The Button Element </h2>
+
+<button type="button" onclick ="alert('Hello World!)">Click Me</button>
+
+<br>
+
+<br>
+
+<h2>The datalist Element</h2>
+
+<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+<form action="action.php">
+
+<input list="browsers" name="browser">
+
+<datalist id="browsers">
+
+<option value="Int">
+
+<option value="Var">
+
+<option value="Char">
+
+</datalist>
+
+<input type="submit">
+
+</form>
+
+<br>
+
+<br>
+
+<h2>The output Element</h2>
+
+<p>The output element represents the result of a calculation.</p>
+
+<form action="action.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+
+0
+
+<input type="range" id="a" name="a" value="50"> 100+
+
+<input type="number" id="b" name="b" value="10">
+
+=
+
+<output name="x" for="a b"> </output>
+
+<br> <br>
+
+<input type="submit">
+
+</form>
+
+<br>
+
+<br>
+
 
 
 </section>
+
+<div class="input type">
+
+<h2>Text field</h2>
+
+<p>The <strong>input type="text"</strong> defines a one-line text input field:</p>
+
+<form action="/action_page.php">
+
+First name:<br>
+<input type="text" name="firstname">
+<br>
+
+Last name:<br>
+<input type="text" name="lastname">
+<br><br>
+
+<input type="submit">
+</form>
+
+<p>Note that the form itself is not visible.</p>
+
+<p>Also note that the default width of a text field is 20 characters.</p>
+
+<br>
+
+<br>
+
+<h2>Password field</h2>
+
+<p>The <strong>input type="password"</strong> defines a password field:</p>
+
+<form action="">
+User name:<br>
+
+<input type="text" name="userid">
+<br>
+
+User password:<br>
+<input type="password" name="psw">
+</form>
+
+<p>The characters in a password field are masked (shown as asterisks or circles).</p>
+
+<br>
+
+<br>
+
+<h2>Submit Button</h2>
+
+<p>The <strong>input type="submit"</strong> defines a button for submitting form data to a form-handler:</p>
+
+<form action="/action_page.php">
+First name:<br>
+
+<input type="text" name="firstname" value="Mickey">
+<br>
+
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+
+<input type="submit" value="Submit">
+</form> 
+
+<p>If you click "Submit", the form-data will be sent to a page called "/action_page.php".</p>
+
+<br>
+
+<br>
+
+<h2>Reset Button</h2>
+
+<p>The <strong>input type="reset"</strong> defines a reset button that will reset all form values to their default values:</p>
+
+<form action="/action_page.php">
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+
+<input type="submit" value="Submit">
+
+<input type="reset">
+</form> 
+
+<p>If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.</p>
+
+<br>
+<br>
+
+<h2>Radio Buttons</h2>
+
+<p>The <strong>input type="radio"</strong> defines a radio button:</p>
+
+<form action="/action_page.php">
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br><br>
+  <input type="submit">
+</form> 
+
+<br>
+
+<br>
+
+<h2>Checkboxes</h2>
+
+<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+<form action="/action.php">
+
+<input type="checkbox" name="vehicle1" value="Bike"> I have a Bike
+
+<br>
+
+<input type="checkbox" name="vehicle2" value="car"> I have a Car
+
+<br>
+
+<input type="submit">
+
+</form>
+
+<br>
+
+<br>
+
+<h2> Input Button </h2>
+
+<button type="button" onclick="alert('Hello World'!)"> Click </button>
+
+<br> <br>
+
+<h2>Color Picker</h2>
+
+<p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
+
+<p>Depending on browser support:<br>A color picker can pop-up when you enter the input field.</p>
+
+<form action="action.php">
+
+Select Your Favourite Color:
+
+<input type="color" name="favcolor" value="#ff000">
+
+<input type="Submit">
+
+<p><b>Note:</b> type="color" is not supported in Internet Explorer 11 and earlier versions or Safari 9.1 and earlier versions.</p>
+
+</form>
+
+<br>
+
+<br>
+
+<h2>Date Field</h2>
+
+<p>The <strong>input type="date"</strong> is used for input fields that should contain a date.</p>
+
+<p>Depending on browser support:<br>A date picker can pop-up when you enter the input field.<p>
+
+<form action="action.php">
+
+Birtdate:
+<input type="date" name="bday">
+
+<input type="submit">
+
+<p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11 and earlier versions.</p>
+
+<br>
+
+<br>
+
+<h2>Date Field Restrictions</h2>
+
+<p>Use the min and max attributes to add restrictions to dates:</p>
+
+
+<form action="action.php">
+
+Enter a date before 1980-4-7 : <br>
+
+<input type="date" name="bday" max="1980-12-31"> <br> <br>
+
+Enter a Date After 2000-5-9: <br>
+
+<input type="date" name="bday" min="2000-01-02"> <br> <br>
+
+<input type="submit">
+
+<p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11 and earlier versions.</p>
+
+</form>
+
+<br>
+
+<br>
+
+
+<h2>Local Date Field</h2>
+
+<p>The <strong>input type="datetime-local"</strong> specifies a date and time input field, with no time zone.</p>
+
+<p>Depending on browser support:<br>A date picker can pop-up when you enter the input field.</p>
+
+<form action="action.php">
+
+Birthdate(date and time)
+
+<input type="datetime-local" name="bdaytime">
+
+<input type="submit" value="send">
+
+<p><strong>Note:</strong> type="datetime-local" is not supported in Firefox, or Internet Explorer 12 and earlier versions.</p>
+
+</form>
+
+<br>
+
+<br>
+
+<h2>Email Field</h2>
+
+<p>The <strong>input type="email"</strong> is used for input fields that should contain an e-mail address:</p>
+
+<form action="/action_page.php">
+
+  E-mail:
+  
+  <input type="email" name="email">
+  
+  <input type="submit">
+  
+</form>
+
+<p>
+
+<b>Note:</b>type="email" is not supported in IE9 and earlier.</p>
+
+<br>
+
+<br>
+
+<h2>Month Field</h2>
+
+<p>The <strong>input type="month"</strong> allows the user to select a month and year.</p>
+
+<p>Depending on browser support:<br>A date picker can pop-up when you enter the input field.</p>
+
+<form action="actionpage.php">
+
+Birthday(Month and Year)
+
+<input type="month" name="bdaymonth">
+
+<input type="submit">
+
+</form>
+
+<p><strong>Note:</strong> type="month" is not supported in Firefox, or Internet Explorer 11 and earlier versions.</p>
+
+<br>
+
+<br>
+
+<h2>Number Field</h2>
+
+<p>The <strong>input type="number"</strong> defines a numeric input field.</p>
+
+<p>You can use the min and max attributes to add numeric restrictions in the input field:</p>
+
+<form action="actionpage.php">
+
+Quantity Between (1 to 7):
+
+<input type="number" name="Quantity" min="1" max="7">
+
+<input type="submit">
+
+</form>
+
+
+<br>
+
+<br>
+
+<h2>Numeric Steps</h2>
+
+<p>Depending on browser support:<br>Fixed steps will apply in the input field.</p>
+
+<form action="actionpage.php">
+
+Quantity:
+
+<input type="number" name="quantity" min="0"  max="100" step="20" value="10">
+
+<input type="sbumit">
+
+</form>
+
+
+<br>
+
+<br>
+
+<h2>Range Field</h2>
+
+<p>Depending on browser support:<br>The input type "range" can be displayed as a slider control.<p>
+
+<form action="actionpage.php">
+
+<input type="range" name="points" min="0" max="100">
+
+<input type="submit">
+
+</form>
+
+<br>
+
+<br>
+
+<h2>Search Field</h2>
+<p>The <strong>input type="search"</strong> is used for search fields (behaves like a regular text field):</p>
+
+<form action="/action_page.php">
+
+Google Search:
+
+<input type="search" name="Google Search">
+
+<input type="submit">
+ 
+</form>
+
+<br>
+
+<br>
+
+<h2>Telephone Field</h2>
+
+<p>The <strong>input type="tel"</strong> is used for input fields that should contain a telephone number:</p>
+
+<form action="/action_page.php">
+
+Telephone:
+
+<input type="tel" name="usrtel">
+
+<input type="Submit">
+
+</form>
+
+<p><b>Note:</b> type="tel" is only supported in Safari 8 and newer versions.</p>
+
+
+<br>
+
+<br>
+
+<h2>Time Field</h2>
+
+<p>The <strong>input type="time"</strong> allows the user to select a time (no time zone):</p>
+
+<p>Depending on browser support:<br>A time picker might pop-up when you enter the input field.</p>
+
+<form action="/action_page.php">
+
+Select Time:
+
+<input type="time" name="usr_time">
+
+<input type="submit">
+
+</form>
+
+<p><strong>Note:</strong> type="time" is not supported in Internet Explorer 12 and earlier versions.</p>
+
+<br>
+
+<br>
+
+<h2>URL Field</h2>
+
+<p>The <strong>input type="url"</strong> is used for input fields that should contain a URL address:</p>
+
+<form action="/action_page.php">
+  
+  Add Your Homepage:
+  
+  <input type="url" name="homepage">
+  
+  <input type="submit">
+  
+</form>
+
+<p><b>Note:</b>
+The type="url" is not supported in IE9 and earlier versions.</p>
+
+<br>
+
+<br>
+
+<h2>Week Field</h2>
+
+<p>The <strong>input type="week"</strong> allows the user to select a week and year:</p>
+
+<p>Depending on browser support:<br>A date picker can pop-up when you enter the input field.</p>
+
+<form action="/action_page.php">
+
+  Select a week:
+  
+  <input type="week" name="year-week">
+  
+  <input type="submit">
+  
+</form>
+
+<p><strong>Note:</strong> type="week" is not supported in Firefox, or Internet Explorer 11 and earlier versions.</p>
+
+<br>
+<br>
+
+<h2>The value Attribute</h2>
+
+<p>The value attribute specifies the initial value for an input field:</p>
+
+<form action="actionpage.php">
+
+First name:<br>
+
+<input type="text" name="firstname" value="John">
+<br>
+
+Last name:<br>
+<input type="text" name="lastname">
+
+</form>
+
+<br>
+
+<br>
+
+<h2>The readonly Attribute</h2>
+
+<p>The readonly attribute specifies that the input field is read only (cannot be changed):</p>
+
+<form action="actionpage.php">
+
+First name:<br>
+
+<input type="text" name="firstname" value ="John" readonly>
+
+<br>
+
+Last name:<br>
+<input type="text" name="lastname">
+
+</form>
+
+<br>
+
+<br>
+
+<h2>The disabled Attribute</h2>
+
+<p>The disabled attribute specifies that the input field is disabled:</p>
+
+<form action="">
+First name:<br>
+
+<input type="text" name="firstname" value ="John" disabled>
+<br>
+
+Last name:<br>
+<input type="text" name="lastname">
+
+</form>
+
+
+<br>
+<br>
+
+<h2>The size Attribute</h2>
+
+<p>The size attribute specifies the size (in characters) of the input field:</p>
+
+<form action="">
+
+First name:<br>
+<input type="text" name="firstname" value="John" size="40">
+<br>
+
+Last name:<br>
+<input type="text" name="lastname">
+
+</form>
+
+<br>
+
+<br>
+
+<h2>The maxlength Attribute</h2>
+
+<p>The maxlength attribute specifies the maximum allowed length for the input field:</p>
+
+<form action="">
+First name:<br>
+
+<input type="text" name="firstname" maxlength="10">
+<br>
+
+Last name:<br>
+<input type="text" name="lastname">
+
+</form>
+
+<br>
+<br>
+
+<h2>The autocomplete Attribute</h2>
+
+<form action="/action_page.php" autocomplete="on">
+
+  First name:<input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  E-mail: <input type="email" name="email" autocomplete="off"><br>
+  
+  <input type="submit">
+</form>
+
+<p>Fill in and submit the form, then reload the page to see how autocomplete works.</p>
+
+<p>Notice that autocomplete is "on" for the form, but "off" for the e-mail field.</p>
+
+<br>
+
+<br>
+
+<h2>The novalidate Attribute</h2>
+<p>The novalidate attribute specifies that the form data should not be validated when submitted.</p>
+
+<form action="/action_page.php" novalidate>
+E-mail: <input type="email" name="user_email">
+<input type="submit">
+</form>
+
+<p>  <strong>Note:</strong> The novalidate attribute of the form tag is not supported in Internet Explorer 9 and earlier versions, 
+
+or in Safari 10 and earlier versions.</p>
+
+<br>
+
+<br>
+
+<h2>The autofocus Attribute</h2>
+
+<p>The autofocus attribute specifies that the input field should automatically get focus when the page loads.</p>
+
+<form action="/action_page.php">
+
+  First name:<input type="text" name="fname" autofocus><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit">
+  
+</form>
+
+<p>
+<strong>Note:</strong> The autofocus attribute of the input tag is not 
+
+supported in Internet Explorer 9 and earlier versions.
+
+</p>
+
+<br>
+
+<br>
+
+<h2>The form Attribute</h2>
+
+<p>The form attribute specifies one or more forms an input element belongs to.</p>
+
+<form action="/action_page.php" id="form1">
+
+First name: <input type="text" name="fname"><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+<p>The "Last name" field below is outside the form element, but still part of the form.</p>
+Last name: <input type="text" name="lname" form="form1">
+
+<br>
+
+<br>
+
+<h2>The formaction Attribute</h2>
+
+<p>The formaction attribute specifies the URL of a file that will process the input control when the form is submitted.</p>
+
+<form action="/action_page.php">
+
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit"><br>
+  <input type="submit" formaction="/action_page2.php" value="Submit to another page">
+  
+</form>
+
+<br>
+
+<br>
+
+<h2>The formenctype Attribute</h2>
+
+<p>The formenctype attribute specifies how the form data should be encoded when submitted (only for forms with method="post").</p>
+
+<form action="/action_page_binary.asp" method="post">
+
+  First name: <input type="text" name="fname"><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+  
+</form>
+
+<p><strong>Note:</strong> The formenctype attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+
+<br>
+
+<br>
+
+<h2>The formmethod Attribute</h2>
+
+<p>The formmethod attribute defines the HTTP method for sending form-data to the action URL.</p>
+
+<form action="/action_page.php" method="get">
+
+  First name: <input type="text" name="fname"><br>
+  
+  Last name: <input type="text" name="lname"><br>
+  
+  <input type="submit" value="Submit">
+  
+  <input type="submit" formmethod="post" value="Submit using POST">
+  
+</form>
+
+<p><strong>Note:</strong> The formmethod attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+
+<br>
+
+<br>
+
+<h2>The formnovalidate Attribute</h2>
+
+<form action="/action_page.php">
+
+  E-mail: <input type="email" name="userid"><br>
+  <input type="submit" value="Submit"><br>
+  
+  <input type="submit" formnovalidate value="Submit without validation">
+  
+</form>
+
+<p><strong>Note:</strong> The formnovalidate attribute of the input tag is not supported in Internet Explorer 9 and 
+
+earlier versions, or in Safari 10 and earlier versions.</p>
+
+<br>
+
+<br>
+
+<h2>The formtarget Attribute</h2>
+
+<p>The formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.</p>
+
+<form action="/action_page.php">
+
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit as normal">
+  <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+</form>
+
+<p><strong>Note:</strong> The formtarget attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+
+<br>
+
+<br>
+
+
+<h2>The height and width Attributes</h2>
+
+<p>The height and width attributes specify the height and width of an input type="image" element.</p>
+
+<form action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="image" src="th.jpeg" alt="Submit" width="48" height="48">
+</form>
+
+<p><b>Note:</b> The input type="image" sends the X and Y coordinates of the click that activated the image button.</p>
+
+<br>
+
+<br>
+
+<h2>The list Attribute</h2>
+<p>The list attribute refers to a datalist element that contains pre-defined options for an input element.</p>
+
+<form action="/action_page.php" method="get">
+
+<input list="browsers" name="browser">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<input type="submit">
+</form>
+
+<p><b>Note:</b> The datalist tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+
+<br>
+
+<br>
+
+<h2>The min and max Attributes</h2>
+
+<p>The min and max attributes specify the minimum and maximum values for an input element.</p>
+
+<form action="/action_page.php">
+
+  Enter a date before 1980-01-01:
+  <input type="date" name="bday" max="1979-12-31"><br>
+
+  Enter a date after 2000-01-01:
+  <input type="date" name="bday" min="2000-01-02"><br>
+
+  Quantity (between 1 and 5):
+  <input type="number" name="quantity" min="1" max="5"><br>
+
+  <input type="submit">
+  
+</form>
+
+<p><strong>Note:</strong> The max and min attributes of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Firefox.</p>
+
+<p><strong>Note:</strong> The max and min attributes will not work for dates and time in Internet Explorer 10, 
+
+since IE 10 does not support these input types.</p>
+
+<br>
+
+<br>
+
+<h2>The multiple Attributes</h2>
+<p>The multiple attribute specifies that the user is allowed to enter more than one value in the input element.</p>
+
+<form action="/action_page.php">
+  Select images: <input type="file" name="img" multiple>
+  <input type="submit">
+</form>
+
+<p>Try selecting more than one file when browsing for files.</p>
+
+<p><strong>Note:</strong> The multiple attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+
+<br>
+
+<br>
+
+<h2>The pattern Attribute</h2>
+
+<p>The pattern attribute specifies a regular expression that the input element's value is checked against.</p>
+
+<form action="/action_page.php">
+
+  Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+  
+  <input type="submit">
+  
+</form>
+
+<p><strong>Note:</strong> The pattern attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, 
+
+or in Safari 10 and earler versions.</p>
+
+<br>
+
+<br>
+
+
+<h2>The placeholder Attribute</h2>
+
+<p>The placeholder attribute specifies a hint that describes the expected value of an input field (a sample value or a short description of the format).</p>
+
+<form action="/action_page.php">
+  <input type="text" name="fname" placeholder="First name"><br>
+  <input type="text" name="lname" placeholder="Last name"><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><strong>Note:</strong> The placeholder attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+
+<br>
+
+<br>
+
+<h2>The required Attribute</h2>
+
+<p>The required attribute specifies that an input field must be filled out before submitting the form.</p>
+
+<form action="/action_page.php">
+  Username: <input type="text" name="usrname" required>
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The required attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+
+<br>
+
+<br>
+
+<h2>The step Attribute</h2>
+
+<p>The step attribute specifies the legal number intervals for an input element.</p>
+
+<form action="/action_page.php">
+  <input type="number" name="points" step="3">
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The step attribute of the input tag is not supported in Internet Explorer 9, and earlier versions.</p>
+
+
+</div>
 
 
 <article>
@@ -205,7 +1293,7 @@ function on_iframe_load()
 	
 	<p> Paragraph contents</p>
 	
-<article>
+</article>
 
 
 <div id="sidebar">
