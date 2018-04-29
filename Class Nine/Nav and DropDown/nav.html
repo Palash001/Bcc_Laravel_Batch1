@@ -1,0 +1,747 @@
+<!DOCTYPE Html5>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="description" content="Class Nine Try">
+
+<meta name="keywords" content="css,html">
+
+<meta name="author" content="Palash">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<meta name="refresh" content="">
+
+<style>
+
+	*
+		{
+			
+			box-sizing:border-box;
+
+		}
+
+	body
+		
+		{
+			font-family:verdana;
+
+			padding:5px;
+
+			margin:0 auto;
+			
+			height:100%;
+
+		}
+
+	
+	header
+
+		{
+
+			padding:20px;
+
+			border:1px solid cyan;
+
+			text-align:center;
+
+			font-family:italic;
+
+		}
+
+
+ 	ul
+
+	{
+
+	list-style-type:none;
+		
+	margin:0;
+
+	padding:0;
+
+	overflow:hidden;
+
+	background-color:#333;
+
+	}
+
+	li
+
+	{
+		float:left;
+
+	}
+
+	
+	li a,.drpbtn
+
+	{
+		display:inline-block;
+
+		text-decoration:none;
+
+		padding:14px 16px;
+
+		text-align:center;
+		
+		color:white;
+		
+	}
+
+	 
+	li:a hover,.dropdown:hover .drpbtn
+
+	{
+
+	background-color:red;
+
+	}
+	
+	
+	li.dropdown
+
+	{
+		
+		display:inline-block;
+
+	}
+
+	
+	.dropdown-content
+
+		
+		{
+
+			display:none;
+
+			background-color:green;
+			
+			box-shadow:0px 2px 4px 5px;
+
+			min-width:140px;
+
+			position:absolute;
+
+			z-index:1;
+
+		}
+
+	.dropdown-content a
+
+		{
+
+			display:block;
+
+			text-align:left;
+
+			padding:14px 16px;
+
+			color:black;
+
+			text-decoration:none;
+
+		}
+
+		
+	.dropdown-content a:hover { background-color:#f1f1f1 }
+	
+	.dropdown:hover .dropdown-content{display:block;}
+
+
+	.leftcoulmn
+
+		{
+
+			width:75%;
+
+			float:left;
+
+		}
+
+	
+	.rightcolumn
+
+		{
+
+			width:25%;
+
+			float:left;
+
+			padding-left:5px;
+
+			box-shadow:5px 6px;
+
+		}
+
+	
+	.side-nav
+
+		{
+
+			margin-top:10px;
+
+			padding:20px;
+
+		}
+		
+		
+/* Responsive Form Val */
+		
+		input[type=text],select,textarea
+			
+			{
+			
+				width:100%;
+				
+				padding:12px;
+				
+				border:1px solid red;
+				
+				border-radius:4px;
+				
+			}
+			
+		label{ padding:12px 12px 12px 0; display:block;}
+		
+		input[type=submit]
+		
+			{
+			
+				background-color:green;
+				
+				color:white;
+				
+				border-radius:5px;
+				
+				padding:12px 16px;
+				
+				cursor:pointer;
+				
+				float:right;
+				
+			}
+			
+			input[type=submit]:hover{background-color:#45a049}
+			
+			
+			.container
+			
+				{
+				
+					padding:20px;
+					
+					background-color:#f2f2f2;
+					
+					border-radius:5px;
+					
+				}
+				
+			
+			.col-25
+			
+				{
+				
+					float:left;
+					
+					width:25%;
+					
+					margin-top:6px;
+					
+				}
+				
+			
+			.col-75
+			
+				{
+				
+					float:left;
+					
+					margin-top:6px;
+					
+					width:75%;
+					
+				}
+				
+			
+			/* Linear Gradient Property */
+			
+			
+				#grad1
+				
+					{
+						height:200px;
+						
+						background:purple;
+						
+						background:linear-gradient(green,yellow);
+						
+					}
+					
+				
+				#grad2
+				
+					{
+					
+						height:200px;
+						
+						background:white;
+						
+						background:linear-gradient(to right, green,yellow);
+			
+					
+					}	
+					
+					
+				#grad3 {
+					height: 100px;
+					background: red; /* For browsers that do not support gradients */
+					background: linear-gradient(0deg, red, yellow); /* Standard syntax (must be last) */
+				}
+
+				#grad4 {
+					height: 100px;
+					background: red; /* For browsers that do not support gradients */
+					background: linear-gradient(90deg, red, yellow); /* Standard syntax (must be last) */
+				}
+
+				#grad5 {
+					height: 100px;
+					background: red; /* For browsers that do not support gradients */
+					background: linear-gradient(180deg, red, yellow); /* Standard syntax (must be last) */
+				}
+
+				#grad6 {
+					height: 100px;
+					background: red; /* For browsers that do not support gradients */
+					background: linear-gradient(-90deg, red, yellow); /* Standard syntax (must be last) */
+				}
+				
+				#grad7
+				
+					{
+					
+					height: 200px;
+					
+					background: red; /* For browsers that do not support gradients */
+					
+					background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /* Standard syntax (must be last) */
+
+			
+					}
+					
+					
+			/* Radial Gredient*/
+			
+					
+					#grad8 
+					
+					{
+							height: 150px;
+							width: 150px;
+							background: red; /* For browsers that do not support gradients */
+							background: radial-gradient(closest-side at 60% 55%, red, yellow, black); /* Standard syntax (must be last) */
+					}
+
+						#grad9
+
+						{
+							height: 150px;
+							width: 150px;
+							background: red; /* For browsers that do not support gradients */
+							background: radial-gradient(farthest-side at 60% 55%, red, yellow, black); /* Standard syntax (must be last) */
+						}
+
+						#grad10 
+						
+						{
+							height: 150px;
+							width: 150px;
+							background: red; /* For browsers that do not support gradients */
+							background: radial-gradient(closest-corner at 60% 55%, red, yellow, black); /* Standard syntax (must be last) */
+						}
+
+						#grad11 
+						
+						{
+							height: 150px;
+							width: 150px;
+							background: red; /* For browsers that do not support gradients */
+							background: radial-gradient(farthest-corner at 60% 55%, red, yellow, black); /* Standard syntax (must be last) */
+						}
+
+
+						#grad12
+							{
+							
+								height: 150px;
+									width: 200px;
+									background: red; /* For browsers that do not support gradients */
+									background: repeating-radial-gradient(red, yellow 10%, green 15%); /* Standard syntax (must be last) */
+							}							
+					
+	.row:after
+
+		{
+
+			content:"";
+
+			clear:both;
+
+			display:table;
+
+		}
+
+	
+	.footer
+
+		{
+
+			text-align:center;
+
+			margin-top:10px;
+
+			padding:10px;
+
+			border:2px solid gray;
+		
+		}
+
+					
+
+</style>
+
+<script>
+
+</script>
+
+</head>
+
+<body>
+
+<main>
+
+<header>
+
+	<h1> Header Side </h2>
+	
+	<p> headline more text </p>
+
+</header>
+
+
+
+<ul>
+
+	<li> <a href="html.com"> Html </a> </li>
+
+	<li> <a href="css.com"> Css </a> </li>
+	
+	<li class="dropdown">
+
+	<a href="javascript:void(0)" class="drpbtn"> Dropdown </a>
+
+	<div class="dropdown-content">
+
+		<a href="php.com">PHP </a>
+
+		<a href="java.com"> Java </a>
+
+		<a href="c.com"> C </a>
+
+	</div>  </li>
+
+
+</ul>
+
+
+<div class="row">
+
+
+	<div class="left-column">
+
+		
+
+		<div class="side-nav">
+		
+		
+		<h2> Form Property </h2>
+		
+			<div class="container">
+			
+				
+					<form action="actionPage.php" method="POST" name="form1">
+					
+					
+					
+					<div class="row">
+					
+						
+						<div class="col-25">
+						
+						<label for="name">First Name </label>
+						
+						</div>
+						
+						
+						<div class="col-75">
+						
+						<input type="text" name="fname" id="fname" placeholder="FirstName"/>
+						
+						</div>
+					
+					
+					</div>
+					
+					
+					
+					
+					<div class="row">
+					
+						
+						<div class="col-25">
+						
+						<label for="name">Last  Name </label>
+						
+						</div>
+						
+						
+						<div class="col-75">
+						
+						<input type="text" name="lname" id="lname" placeholder="Last Name"/>
+						
+						</div>
+					
+					
+					</div>
+					
+					
+					
+					<div class="row">
+					
+						
+						<div class="col-25">
+						
+						<label for="name">Country  </label>
+						
+						</div>
+						
+						
+						<div class="col-75">
+						
+						<select id="country" name="country">
+						
+						<option value="australia">Australia </option>
+						
+						<option value="india"> India </option>
+						
+						<option value="barbosa">Barbosa</option>
+						
+						</select>
+						
+						</div>
+					
+					
+					
+					</div>
+					
+					
+					
+					<div class="row">
+					
+						
+						<div class="col-25">
+						
+						<label for="name"> Subject </label>
+						
+						</div>
+						
+						
+						<div class="col-75">
+						
+						<textarea id="subject" name="subject" placeholder="Your Subject..." style="height:200px;"> </textarea>
+						
+						</div>
+					
+					
+					</div>
+					
+					
+					<div class="row">
+					
+					<input type="submit" value="submit">
+					
+					</div>
+					
+					
+					</form>
+			
+			
+			</div>
+
+		
+
+		</div>
+		
+		<!--End of Side nav-->
+		
+		
+		<div class="side-nav">
+	
+		
+		<h1>Linear Gradient - Top to Bottom</h1>
+		
+		
+		<p>This linear gradient starts at the top. It starts red, transitioning to yellow:</p>
+		
+
+		<div id="grad1"></div>
+		
+
+		<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+		
+		
+		<br>
+		
+		<br>
+		
+		<br>
+		
+		<h1>Linear Gradient - Left to Right</h1>
+		
+			<p>This linear gradient starts at the left. It starts red, transitioning to yellow:</p>
+
+			<div id="grad2"></div>
+
+		<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>		
+		
+
+		
+			
+		<br>
+		
+		<br>
+		
+		<br>
+		
+		
+		<h1>Linear Gradients - Using Different Angles</h1>
+
+		<div id="grad3" style="text-align:center;">0deg</div><br>
+		<div id="grad4" style="text-align:center;">90deg</div><br>
+		<div id="grad5" style="text-align:center;">180deg</div><br>
+		<div id="grad6" style="text-align:center;">-90deg</div>
+
+		<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+		
+	
+		
+		
+		<br>
+		
+		<br>
+		
+		<br>
+		
+		
+		<h1>Linear Gradient - Transparency</h1>
+		
+		<p>To add transparency, we use the rgba() function to define the color stops. The last parameter in the rgba() function can be a value from 0 to 1, and it defines the transparency of the color: 0 indicates full transparency, 1 indicates full color (no transparency).</p>
+
+		<div id="grad7"></div>
+
+		<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+		
+		</div>
+		
+		
+		<div class="side-nav">
+		
+			
+			<h1>Radial Gradients - Different size keywords</h1>
+
+			<h2>closest-side:</h2>
+			
+			<div id="grad8"></div>
+
+			<h2>farthest-side:</h2>
+			
+			<div id="grad9"></div>
+
+			<h2>closest-corner:</h2>
+			
+			<div id="grad10"></div>
+
+			<h2>farthest-corner (default):</h2>
+			
+			<div id="grad11"></div>
+
+			<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+
+			
+			<br>
+			
+			<br>
+			
+			<br>
+			
+			<h1>Repeating Radial Gradient</h1>
+
+			<div id="grad12"></div>
+
+			<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+
+
+		
+		</div>
+		
+		<!--End of sidenav-->
+		
+	</div>
+
+	<!--End of Left Column-->
+
+
+	<div class="right-column">
+
+		
+		<div class="side-nav">
+		
+	
+		
+		
+		
+
+		</div>
+		
+		<!--End of Side Nav-->
+	
+	</div>
+	
+	<!--End of right column--> 
+	
+	
+	
+
+</div>
+
+	<!--End of row-->
+	
+</main>
+
+<div class="footer">
+
+<p> @Copyright </p>
+
+</div>
+
+
+</body>
+
+</html>
+
+
