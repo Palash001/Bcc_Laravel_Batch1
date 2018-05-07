@@ -1,0 +1,204 @@
+
+body
+
+	{
+			font-family:arial;
+
+			background-image:url('bck.jpeg');
+			
+			background-repeat:no-repeat ;
+			
+			background-attachment:fixed;
+			
+			padding:30px;
+			
+			
+	}
+	
+
+	.header
+	
+		{
+		
+			background-color:#66ff99;
+			
+			text-align:center;
+			
+			padding:60px;
+			
+			font-family:Italic;
+			
+		}
+		
+	
+	.header h1 p
+		
+		{
+			font-size:1em;
+			
+		}
+		
+	
+	.topnav
+	
+		{
+		
+			overflow:hidden;
+			
+			background-color:#003311;
+			
+		}
+		
+	
+	.topnav a
+		
+		{
+		
+			display:block;
+			
+			float:left;
+			
+			text-decoration:none;
+			
+			padding:14px 16px;
+			
+			color:white;
+			
+		}
+
+	.topnav a:hover
+	
+		{
+			background-color:#e6ffee;
+			
+			color:black;
+			
+		
+		}
+		
+		
+		.leftcolumn
+		
+			{
+				width:75%;
+				
+				float:left;
+				
+			}
+			
+		
+		.rightcolumn
+		
+			{
+			
+				width:25%;
+				
+				padding-left:20px;
+				
+				background-color:#6666cc;
+				
+				float:left;
+				
+				margin-top:20px;
+				
+			}
+		
+	
+	.card
+		
+		{
+		
+			margin-top:20px;
+			
+			padding:20px;
+			
+			background-color:#d9f2e6
+			
+		}
+		
+	.border
+	
+		{
+			border-style:dotted;
+			
+			border-width:5px;
+			
+			border-color:red;
+			
+			
+		}
+		
+	.border-radius
+	
+		{
+			border-radius:8px;
+			
+			border:10px solid red;
+			
+			box-shadow:5px 8px;
+		}
+		
+	
+	img
+	
+	{
+		
+		display:block;
+		
+		margin:auto;
+		
+		padding:auto;
+	}
+
+	p.white-space
+	
+		{
+		
+			font-family:verdana;
+			
+			white-space:pre;
+			
+			color:red;
+				
+		}
+		
+	
+				
+	
+	.fakeimg
+	
+		{
+		
+			width:100px;
+			
+			padding:20px;
+			
+			background-color:white;
+			
+		}
+		
+	table > tbody > tr > td, .table-custom> tbody > tr > th, .table > tfoot > tr > td, .table-custom> tfoot > tr > th, .table-custom > thead > tr > td, .table-custom> thead > tr > th 
+	
+		{
+		
+			border-radius:5px;
+		
+		}
+		
+	
+	.footer
+	
+		{
+		
+			text-align:center;
+			
+			padding:5px;
+			
+			margin-top:5px;
+			
+			border:1px solid green;
+			
+			}
+			
+			
+	

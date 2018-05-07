@@ -1,0 +1,350 @@
+
+
+body
+
+	{
+
+		font-family:arial;
+		
+		padding:10px;
+		
+		margin:0;
+		
+		background-image:url('mxz.jpg');
+		
+		background-repeat:no-repeat;
+		
+		background-attachment:fixed;
+		
+	}
+	
+.header
+
+{
+	
+	font-size:20px;
+	
+	padding:20px;
+	
+	color:#cceeff;
+	
+	text-align:center;
+	
+	border:1px solid gray;
+	
+}
+
+
+.topnav
+
+{
+	background-color:#80ffff;
+	
+	overflow:hidden;
+	
+	margin-top:5px;
+	
+}
+
+.topnav a
+
+{
+	
+	display:block;
+	
+	text-decoration:none;
+	
+	padding:14px 16px;
+	
+	text-align:center;
+	
+	float:left;
+	
+}
+
+.topnav a:hover
+
+{
+	color:#cccccc;
+	
+	background-color: #f2f2f2;
+	
+}
+
+.leftcolumn
+
+{
+	width:75%;
+	
+	float:left;
+	
+}
+
+.rightcolumn
+
+{
+	width:25%;
+	
+	float:left;
+	
+	padding-left:20px;
+	
+	border-left:2px solid black;
+	
+}
+
+.side-content
+
+{
+	
+	margin-top:20px;
+	
+	padding:20px;
+	
+}
+
+
+/* Outline Property */
+
+p.ex1
+
+{
+	
+	border:5px solid red;
+	
+	outline-style:solid;
+	
+	outline-color:black;
+	
+	outline-width:thin;
+	
+	margin:auto;
+	
+	padding:20px;
+	
+	text-align:center;
+	
+}
+
+p.ex2
+
+{
+	
+	border:5px solid red;
+	
+	outline-style:solid;
+	
+	outline-color:black;
+	
+	outline-width:medium;
+	
+	margin:auto;
+	
+	padding:20px;
+	
+	text-align:center;
+	
+}
+
+p.ex3
+
+{
+	
+	border:5px solid red;
+	
+	outline-style:solid;
+	
+	outline-color:black;
+	
+	outline-width:thick;
+	
+	margin:auto;
+	
+	padding:20px;
+	
+	text-align:center;
+	
+}
+
+p.ex4
+
+{
+	
+	border:5px solid red;
+	
+	outline-style:solid;
+	
+	outline-color:black;
+	
+	outline-width:4px;
+	
+	margin:auto;
+	
+	padding:20px;
+	
+	text-align:center;
+	
+}
+
+
+/* Outline Offset Property*/
+
+	p.off
+	
+	{
+		
+		margin:auto;
+		
+		padding:10px;
+		
+		border:2px solid green;
+		
+		outline:3px solid red;
+		
+		outline-offset:10px;
+		
+	}
+	
+	
+/* Navigation -Bar	*/
+
+ul
+
+{
+	
+	list-style-type:none;
+	
+	margin:0;
+	
+	padding:0;
+		
+	width:100px;
+	
+	border:2px solid #f1f1f1;
+	
+	background-color:cyan;
+	
+	overflow:hidden;
+
+	
+}
+
+li a
+
+{ 
+
+	display:block;
+	
+	color:#000;
+	
+	padding:12px 16px;
+	
+	text-align:center;
+	
+	text-decoration:none;
+	
+}
+
+li
+
+{
+	border-bottom:2px solid #555;
+	
+	text-align:center;
+	
+	float:left;
+	
+}
+
+
+li:last-child
+
+{
+	border-bottom:none;
+	
+}
+
+li a:hover:not(.active)
+
+{
+	background-color:black;
+	
+	color:maroon;
+	
+}
+	
+	/* Animation*/
+	
+	#animation
+	
+	{
+		
+		width:100px;
+		
+		height:100px;
+		
+		background-color:green;
+		
+		position:relative;
+		
+		animation-name:Raw;
+		
+		-webkit-animation-name:Raw;
+		
+		animation-duration:10s;
+		
+		animation-iteration-count:infinite;
+		
+		animation-timing-function: linear;
+		
+		animation-direction:reverse;
+		
+		transform:skewY(20deg);
+	}
+	
+	
+	@keyframes Raw
+	
+	{
+		
+		0%{background-color:yellow; left:0px; top:0px;}
+		
+		25%{background-color:green; left:200px; top:0px;}
+		
+		50%{background-color:black; left:200px; top:200px;}
+		
+		75%{background-color:purple; left:0px; top:200px;}
+		
+		
+		100%{background-color:red; left:0px; top:0px;}
+	
+	}
+
+.content:after
+
+{
+	content:"";
+	
+	clear:both;
+	
+	display:table;
+	
+}
+
+
+.footer
+
+{
+	padding:5px;
+	
+	text-align:center;
+	
+	margin-top:5px;
+	
+	border:1px solid green;
+	
+}
+	
+	
+	
+	
