@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Basic HTML page">
+    <meta name="keywords" content="HTML, Learn HTML">
+    <meta name="author" content="Awolad Hossain">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Class #02 - HTML</title>
+
+    <script>
+        function handleClickOnImage() {
+            var originalImage = document.getElementById('placeholder-img');
+            originalImage.src = document.getElementById('placeholder-img').getAttribute('data-src');
+        }
+    </script>
+
+</head>
+<body>
+
+<p style="color: green">This is paragraph! <span style="color: red">This is span text</span></p>
+
+<p><cite>Javascript The good part</cite> is one of best javascript book.</p>
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<address>
+    BCC, ICT tower, Dhaka
+</address>
+
+<br>
+
+<details>
+    <summary>Copyright 1999-2014.</summary>
+    <p> - by Refsnes Data. All Rights Reserved.</p>
+    <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+</details>
+
+<br>
+
+<b>This is bold text.</b>
+
+<strong>This is bold by strong tag.</strong>
+
+<u>This is underline text</u>
+
+<i>This is italic text</i>
+
+<p>This is paragraph
+    <small>This is small</small>
+</p>
+
+<p>This text contains <sub>subscript</sub> text.</p>
+
+<p>This text contains <sup>superscript</sup> text.</p>
+
+<p>This text contains <del>Delete</del> text.</p>
+
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+<p>This text contains some <code>var name = 'bcc';</code></p>
+
+<br />
+
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+</blockquote>
+
+
+<img onclick="handleClickOnImage()"
+     id="placeholder-img"
+     src="http://via.placeholder.com/200x200"
+     alt="placeholder"
+     data-src="http://via.placeholder.com/250x250">
+
+<hr />
+
+<p>Copyright &copy; &reg;</p>
+
+</body>
+</html>

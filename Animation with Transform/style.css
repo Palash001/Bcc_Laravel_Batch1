@@ -1,0 +1,185 @@
+
+*
+
+{
+	
+	box-sizing:border-box;
+	
+}
+
+body
+
+	{
+
+		font-family:arial;
+		
+		padding:20px;
+		
+		
+		
+	}
+	
+header
+
+{
+	
+	font-size:20px;
+	
+	padding:20px;
+	
+	color:#cceeff;
+	
+	text-align:center;
+	
+	border:1px solid gray;
+	
+}
+
+
+.topnav
+
+{
+	background-color:#80ffff;
+	
+	overflow:hidden;
+	
+}
+
+.topnav a
+
+{
+	
+	display:block;
+	
+	text-decoration:none;
+	
+	padding:14px 16px;
+	
+	text-align:center;
+	
+	float:left;
+	
+}
+
+.topnav a:hover
+
+{
+	color:#cccccc;
+	
+	background-color: #f2f2f2;
+	
+}
+
+.leftcolumn
+
+{
+	width:75%;
+	
+	float:left;
+
+	height:100%;
+	
+}
+
+.rightcolumn
+
+{
+	width:25%;
+	
+	float:left;
+	
+	padding-left:20px;
+	
+	border-left:2px solid black;
+	
+}
+
+.side-content
+
+{
+	
+	margin-top:20px;
+	
+	padding:20px;
+	
+}
+
+
+/* Animation Property */
+
+
+ div.anim
+
+	{
+
+		width:100px;
+		
+		height:100px;
+
+		background-color:red;
+		
+		position:relative;
+
+		-webkit-animation-name:Example;
+
+		-webkit-animation-duration:5s;
+	
+		animation-name:Example;
+
+		animation-duration:15s;
+
+		animation-iteration-count:infinite;
+
+		animation-timing-fucntion:linear;
+
+		animation-direction:normal;
+
+		
+		transform:rotate(10deg);
+
+	}
+
+@keyframes Example
+
+	{
+
+		0%{background-color:purple; left:0px; top:0px;}
+
+		25%{background-color:maroon; left:200px; top:0px;}
+
+		50%{background-color:green; left:200px; top:200px;}
+
+		75%{background-color:black; left:0px; top:200px;}
+
+		100%{background-color:yellow; left:0px;top:0px;}		
+/* 
+	}		
+
+.content:after
+
+{
+	content:"";
+	
+	clear:both;
+	
+	display:table;
+	
+}
+
+
+.footer
+
+{
+	padding:5px;
+	
+	text-align:center;
+	
+	margin-top:5px;
+	
+	border:1px solid green;
+	
+}
+	
+	
+	
+	
