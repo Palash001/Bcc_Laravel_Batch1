@@ -1,0 +1,83 @@
+
+
+<html>
+
+
+<body>
+
+    <h3> Odd or Even</h3>
+    
+    <form name="form1" method="post" action="">
+    
+        <label>Enter a number </label>
+        
+        <input type="text" name="number">
+        
+        <input type="submit" value="check">
+        
+        
+    
+    </form>
+    
+</body>
+
+</html>
+
+<?php
+
+    if(!empty($_POST))
+        
+    {
+        
+        $number = $_POST['number'];
+        
+        
+        
+        if(($number%2)==0)
+            
+        {
+            
+            echo "You entered an even number";
+        }
+        
+        else
+            
+        {
+            echo "You enterd an odd number";
+        }
+        
+        echo "<br><br>";
+        
+        
+        echo "<table border=1>";
+        
+        echo "<tr><th> Main </th>";
+        
+        echo "<th>By WHich </th>";
+        
+        echo "<th>Result</th> </tr>";
+        
+        for ($i=1;$i<=10;$i++)
+            
+        {
+            
+            echo "<tr><td>";
+            
+            echo $number;
+            
+            echo "</td><td>";
+            
+            echo $i;
+            
+            echo "</td><td>";
+            
+            echo $number *  $i;
+            
+            echo "</td> </tr>";
+        }
+        
+        echo "</table>";
+        
+    }
+
+?>
